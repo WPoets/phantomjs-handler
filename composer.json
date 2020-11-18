@@ -19,7 +19,7 @@
         "php": ">=7.0",
         "composer/installers": "~1.0",
 		"jonnyw/php-phantomjs": "^4.6",
-        "oomphinc/composer-installers-extender": "^2.0",
+        "oomphinc/composer-installers-extender": "^2.0"
     },
 	 "extra": { 
 		"installer-name": "phantomjs"
