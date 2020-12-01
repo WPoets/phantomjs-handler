@@ -15,7 +15,8 @@ function generate($atts,$content=null,$shortcode){
 		'output_file'=>'',
 		'format'=>'A3',
 		'orientation' =>'portrait',
-		'margin'=>'0cm'
+		'margin'=>'0cm',
+		'show_page_number'=>'yes'
 		), $atts) );
 	
 	/*Needed to load required files from JonnyW-PhantomJs Library*/
@@ -53,9 +54,10 @@ function generate($atts,$content=null,$shortcode){
     $request->setFormat($format);
     $request->setOrientation($orientation);
     $request->setMargin($margin);
-    $request->setRepeatingHeader('<span style="float:right; font-size: 9px;">%pageNum% / %pageTotal%</span>');
-    $request->setRepeatingFooter('<span style="float:right; font-size: 9px;">%pageNum% / %pageTotal%</span>');
-
+    if($show_page_number == 'yes'){
+	    $request->setRepeatingHeader('<span style="float:right; font-size: 9px;">%pageNum% / %pageTotal%</span>');
+	    $request->setRepeatingFooter('<span style="float:right; font-size: 9px;">%pageNum% / %pageTotal%</span>');
+    }
     /** 
      * @see JonnyW\PhantomJs\Http\Response 
      **/
