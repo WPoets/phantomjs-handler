@@ -36,7 +36,7 @@ function generate($atts,$content=null,$shortcode){
 	/*Setup content if passed*/	
 	if(empty($url)){
 		$content=\aw2_library::parse_shortcode($content);
-		
+		$content = '<meta content="text/html; charset=utf-8" http-equiv="Content-Type">'.$content;
 		//TEMP_PATH is defined in wp-config
 		$temp_file_url = TEMP_PATH . uniqid().".html";
 		
