@@ -11,6 +11,8 @@ Added support for using Phantojs to generate pdf files from html in Awesome Ente
 To use this handler use composer command.
 
 ```composer require wpoets/phantomjs-handler```
+##### 1.0.1
+* Improved : Added support for parsing UTF-8 encoded symbols
 
 ##### 1.0.1
 * Improved : Added attribute to handle the display of page number
