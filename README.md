@@ -12,6 +12,9 @@ To use this handler use composer command.
 
 ```composer require wpoets/phantomjs-handler```
 
+##### 1.0.4
+* Fixed: "quotes" character code was giving issues.
+
 ##### 1.0.3
 * Improved : Updated the code to support graviton processor to generate pdf and latest version on ubuntu.
 ##### 1.0.2
