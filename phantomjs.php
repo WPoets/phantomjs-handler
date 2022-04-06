@@ -46,7 +46,7 @@ function generate($atts,$content=null,$shortcode){
 		$url = 'file://'.$temp_file_url;
 	}
 	
-    return  exec(“export QT_QPA_PLATFORM=offscreen && /usr/bin/phantomjs /usr/bin/genPdf.js $url $output_file_path “,$return_value, $return_var);
+    return  exec("export QT_QPA_PLATFORM=offscreen && /usr/bin/phantomjs /usr/bin/genPdf.js $url $output_file_path ",$return_value, $return_var);
 	
     /** 
      * @see JonnyW\PhantomJs\Http\PdfRequest
