@@ -12,6 +12,10 @@ To use this handler use composer command.
 
 ```composer require wpoets/phantomjs-handler```
 
+##### 1.0.6
+* Fixed: Delete temporary created file
+
+
 ##### 1.0.5
 * Fixed: Format passed as parameter to phantom js cli
 
