@@ -6,7 +6,7 @@ use JonnyW\PhantomJs\Client;
 \aw2_library::add_service('phantomjs','PhantomJS Library',['namespace'=>__NAMESPACE__]);
 
 \aw2_library::add_service('phantomjs.generate','Generate a PDF from URL or HTML. Use phantomjs.generate',['namespace'=>__NAMESPACE__]);
-function generate($atts,$content=null,$shortcode){
+function generate($atts,$content=null,$shortcode=null){
 	
 	if(\aw2_library::pre_actions('all',$atts,$content,$shortcode)==false)return;
 	extract(\aw2_library::shortcode_atts( array(
